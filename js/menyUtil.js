@@ -1,9 +1,9 @@
 const menyUtil  ={
     /**
      * 
-     * @param {HTMLButtonElement} button 
+     * @param {HTMLLabelElement} button 
      */
     onDropdownMenuClick(button){
-        button.parentElement.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+        button.parentElement.getElementsByClassName("underGruppe")[0].classList.toggle("vis");
     }
 };
