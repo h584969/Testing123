@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+
+        .fix {
+            position: fixed;
+            top: 0px;
+            pointer-events: none;
+        }
+
+        .fix * {
+            pointer-events: all;
+        }
+
+        .mix {
+            position: fixed;
+            top: 20px;
+        }
+
+        .abs1 {
+            position: absolute;
+            top: 65%;
+            background-color: white;
+            width: 33%;
+            height: 55%;
+        }
+
+        .abs1txt {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            height: 100%;
+            width: 100%;
+            top: 50%;
+        }
+
+        .abs2 {
+            position: absolute;
+            top: 65%;
+            background-color: red;
+            left: 33%;
+            width: 33%;
+            height: 55%;
+        }
+
+        .abs3 {
+            position: absolute;
+            top: 65%;
+            background-color: black;
+            left: 66%;
+            width: 33%;
+            height: 55%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fix" onclick="console.log('hei')">
+        <img src="https://assets.venyou.no/wp-content/uploads/sites/154/2020/01/14095529/Greenwave_fyret2_1920x1080.jpg"
+            width="99%" height="65%">
+
+        <div class="abs1">
+            <div class="abs1txt">
+                <a href="vg.no">Link til ladestasjon</a>
+            </div>
+            <img src="https://static.kartbutikken.no/media/catalog/product/6/0/6003a_2e7a.jpg" width="100%"
+                height="100%">
+
+        </div>
+
+        <div class="abs2">
+            <div class="abs1txt">
+                <a href="file:///C:/Users/Hedda/AppData/Local/Temp/Temp1_F3%20(1).zip/RowSpan1.html">Se
+                    ladestasjonene!</a>
+            </div>
+            <img src="stasjon.jpg" width="100%" height="100%">
+        </div>
+        <div class="abs3">
+            <div class="abs1txt">
+                <a href="https://vibbedille.blogg.no/timeline/">Kontakt oss/Mer om ChaBo </a>
+            </div>
+            <img src="https://i.ytimg.com/vi/swq8dAnsfsY/maxresdefault.jpg" width="100%" height="100%">
+        </div>
+        <div class="mix">
+            <h1><Strong> ChaBo </Strong></h1>
+            </br></br></br>
+            <h3> Norges største oversikt over elbåtladestasjoner </h3>
+        </div>
+    </div>
+</body>
+
+</html>
+gi teksten en prosentverdi så den blir mindre og ikke bare bildene blir mindre. så den følger bildene.
