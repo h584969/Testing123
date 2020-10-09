@@ -1,97 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigasjon</title>
-    <style>
-        table {
-            width: 100%;
-        }
-
-        tr {
-            width: 100%;
-        }
-
-        html body {
-            margin: 0;
-            background-color: rgb(190, 246, 255);
-        }
-
-        #title {
-            background-color: white;
-            width: 40%;
-            max-width: 40%;
-            height: 20%;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border: 1px solid black;
-            text-align: center;
-            font-size: 29px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-bottom: 0px;
-        }
-
-        #navigasjon {
-
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: white;
-            height: 100%;
-            margin-top: 0px;
-            min-width: 20%;
-            max-width: 30%;
-            border-top: 1px solid white;
-            border-bottom: 3px groove lightgray;
-            border-right: 3px groove lightgray;
-        }
-
-        #navigasjon ul,
-        li {
-            margin-top: 5px;
-            padding-top: 5px;
-        }
-
-        #kart {
-            z-index: -1;
-            position: fixed;
-            left: 40%;
-            top: 0;
-            width: 60%;
-            padding: 0;
-        }
-
-        ul label {
-            border: none;
-            background-color: inherit;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: inherit;
-            cursor: pointer;
-            display: inline-block;
-            border-bottom: 1px solid white;
-        }
-
-        ul label:hover {
-            color: blue;
-            border-bottom-color: blue;
-        }
-
-        ul label img {
-            display: none;
-        }
-
-        ul label:hover img {
-            display: inline;
-        }
-
-        .underGruppe {
-            display: none;
-        }
-
-        .vis {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/fredrikSittStilarkSomErMidlertidig.css">
     <script src="../js/kartKontrollerer.js"></script>
     <script src="../js/menyUtil.js"></script>
 </head>
@@ -146,9 +60,22 @@
             style="fill: rgb(237, 0, 198); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; paint-order: fill;" />
 
     </svg>
-    <div id="title">
-        <strong>CHABO<br>Navigasjon </strong>
-    </div>
+    <table id = "header">
+        <tr>
+            <td colspan="2" id = "logo">
+                <img src="../bilder/testlogo.png" alt="ChaBo">
+            </td>
+            <td></td>
+            <td></td>
+            <td id = "title">
+                <div>
+                    <h1>Navigasjon</h1>
+                </div>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
     <div id="navigasjon">
         <ul>
             <li><label onclick="menyUtil.onDropdownMenuClick(this)">Vestland <img src="../bilder/temp_meny_pil_ned.png"
@@ -157,27 +84,7 @@
                     <li><label onclick="menyUtil.onDropdownMenuClick(this)">Bergen <img
                                 src="../bilder/temp_meny_pil_ned.png" alt=""></label>
                         <ul class="underGruppe">
-                            <li><a href="./ladestasjon.html">Store Lungegårsvann</a></li>
-                            <li><a href="./ladestasjon.html">Vågen</a></li>
-                            <li><a href="./ladestasjon.html">Puddefjorden</a></li>
-                        </ul>
-                    </li>
-                    <li><label onclick="menyUtil.onDropdownMenuClick(this)">Stavanger <img
-                                src="../bilder/temp_meny_pil_ned.png" alt=""></label>
-                        <ul class="underGruppe">
-                            <li>Kommer snart</li>
-                        </ul>
-                    </li>
-                    <li><label onclick="menyUtil.onDropdownMenuClick(this)">HaugeSund <img
-                                src="../bilder/temp_meny_pil_ned.png" alt=""></label>
-                        <ul class="underGruppe">
-                            <li>Kommer snart</li>
-                        </ul>
-                    </li>
-                    <li><label onclick="menyUtil.onDropdownMenuClick(this)">Øygarden <img
-                                src="../bilder/temp_meny_pil_ned.png" alt=""></label>
-                        <ul class="underGruppe">
-                            <li>Kommer snart</li>
+                            <li><a href="./ladestasjon.html">Bryggen</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -188,17 +95,6 @@
                     <li><a href="#">Bjørvika</a></li>
                     <li><a href="#">Pipervika</a></li>
                 </ul>
-            </li>
-            <li><label onclick="menyUtil.onDropdownMenuClick(this)">Møre og Romsdal</label>
-                <ul class="underGruppe">
-                    <li>Kommer Snart</li>
-                </ul>
-
-            <li><label onclick="menyUtil.onDropdownMenuClick(this)">Troms og Finmark</label>
-                <ul class="underGruppe">
-                    <li>Kommer Snart</li>
-                </ul>
-            </li>
             </li>
         </ul>
     </div>
