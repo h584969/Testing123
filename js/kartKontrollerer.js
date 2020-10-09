@@ -53,11 +53,6 @@ const Zoomer = {
             c.style.display ="none";
         }
         FYLKESIRKLER[fylkeID].style.display = "block";
-       
-
-        this.kart.currentTranslate.x = (this.kart.width.baseVal.value/2-punkt.x);
-        this.kart.currentTranslate.y = (this.kart.height.baseVal.value/5-punkt.y);
-        this.kart.currentScale = 2;
     },
     makeCircles(){
         for(const t in FYLKEPOSISJONER){
