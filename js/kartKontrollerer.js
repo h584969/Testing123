@@ -17,35 +17,65 @@ const FYLKER = new Set([
     "VestfoldogTelemark",
 ]);
 
+const FYLKEPOSISJONER = {
+    "Rogaland": {x: 568.817, y: 846.623},
+    "Agder":{x: 609.951,y:868.351},
+    "MøreogRomsdal":{x:609.694,y:655.673},
+    "Trøndelag":{x:701.585,y:595.937},
+    "Nordland":{x:764.338,y:338.793},
+    "Vestland": {x: 565.676, y: 754.205},
+    "TromsogFinmark":{x:931.194,y:222.902},
+    "Innlandet":{x:685.390,y:735.265},
+    "Viken":{x:676.084,y:798.384},
+    "Oslo": {x: 713.635, y: 821.656},
+    "VestfoldogTelemark":{x: 646.826, y: 830.080},
+};
+
+const FYLKESIRKLER = {};
+
 const Zoomer = {
     /**
      * @type {SVGSVGElement}
      */
     kart: null,
     zoomAt(fylkeID){
-        if (!this.kart) this.kart = document.getElementById("kart");
-        /**
-         * @type {SVGPathElement}
-         */
-        let fylke = this.kart.getElementsByClassName(fylkeID)[0];
-        let lengde = fylke.getTotalLength();
-        let punkt = {
-            x: 0,
-            y: 0,
-        };
-        for (var i = 0; i < lengde; i++){ //TODO finne en måte å få tak i alle punktene uten å måtte gå rundt
-            let p = fylke.getPointAtLength(i);
-            punkt.x += p.x;
-            punkt.y += p.y;
+
+
+        let punkt = FYLKEPOSISJONER[fylkeID];
+
+
+        for (const t in FYLKESIRKLER){
+            /**
+             * @type {SVGCircleElement}
+             */
+            const c = FYLKESIRKLER[t];
+
+            c.style.display ="none";
         }
-        i--;
-        punkt.x /= i;
-        punkt.y /= i;
+        FYLKESIRKLER[fylkeID].style.display = "block";
+    },
+    makeCircles(){
+        for(const t in FYLKEPOSISJONER){
+            let el = document.createElementNS("http://www.w3.org/2000/svg","circle");
+            el.setAttributeNS(null,"cx",FYLKEPOSISJONER[t].x-5);
+            el.setAttributeNS(null,"cy",FYLKEPOSISJONER[t].y-5);
+            el.setAttributeNS(null,"r",5);
+            el.setAttributeNS(null,"style","fill:none;stroke:white;stroke-width:2px;display:none;");
+            el.setAttributeNS(null,"data-navn",t);
+            FYLKESIRKLER[t] = el;
+            Zoomer.kart.appendChild(el);
+        } 
+    }
+};
 
-        this.kart.currentTranslate.x = this.kart.clientWidth/2 -punkt.x;
-        this.kart.currentTranslate.y = this.kart.clientHeight/2 -punkt.y*2;
+window.onload = () =>{
+    Zoomer.kart = document.getElementById("kart");
+    Zoomer.makeCircles();
+};
 
-        this.kart.currentScale = 2;
-
+document.onkeydown = (ev) =>{
+    if (ev.key.toLocaleLowerCase() === "a"){
+        console.log(kart);
+        Zoomer.kart.currentTranslate.x += 10;
     }
 };

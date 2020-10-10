@@ -1,0 +1,265 @@
+:root{
+    --powder-blue: #CAF0F8;
+    --blizzard-blue: #ADE8F4;
+    --Sky-blue-crayola-lys: #90E0EF;
+    --Sky-blue-crayola-mørk: #48CAE4;
+}
+
+html body {
+    margin: 0;
+    background-color: var(--Sky-blue-crayola-mørk);
+    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#header{
+    background-color: var(--Sky-blue-crayola-mørk);
+    position: relative;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#header tbody tr{
+    height: inherit;
+}
+
+#logo{
+    
+    width: 10%;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    position: relative;
+    padding: 0;
+    width: 40%;
+    max-width: 40%;
+    margin-top: 0px;
+    border-bottom: 4px solid darkgray;
+    border-radius: 10px;
+    background-color: var(--Sky-blue-crayola-mørk);
+    margin-bottom: 0px;
+}
+
+#title div{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+
+#title div h1{
+    color: gray;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+}
+
+#navigasjon {
+    background-color: var(--powder-blue);
+    height: 100%;
+    margin-top: 0px;
+    min-width: 20%;
+    max-width: 30%;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-bottom-right-radius: 10px;
+}
+
+#navigasjon ul,
+li {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+#kart {
+    
+    z-index: -1;
+    position: fixed;
+    left: 40%;
+    top: 0;
+    width: 60%;
+    padding: 0;
+}
+
+ul label {
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 1px solid var(--powder-blue);
+}
+
+ul label:hover {
+    color: blue;
+    border-bottom-color: blue;
+}
+
+ul label img {
+    display: none;
+}
+
+ul label:hover img {
+    display: inline;
+}
+
+.underGruppe {
+    display: none;
+}
+
+.vis {
+    display: block;
+}
+
+
+.HeddaVenstre {
+    position: absolute;
+    bottom: 10%;
+    left: 13%;
+  background-color: black;
+    width: 300px;
+    height: 300px;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    z-index:1;
+}
+.HeddaHøyre {
+    position: absolute;
+    bottom: 10%;
+    right: 13%;
+  background-color: black;
+    width: 300px;
+    height: 300px;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    z-index:1;
+}
+.HeddaHøyreTXT {
+    position: absolute;
+    background-color:var(--powder-blue);
+    bottom: 6%;
+    right: 13%;
+    color: rgb(0, 0, 0);
+    height: 4%;
+    width: 300px;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.HeddaVenstreTXT {
+    position: absolute;
+    background-color:var(--powder-blue);
+    bottom: 6%;
+    left:13%;
+    color: rgb(0, 0, 0);
+    height: 4%;
+    width: 300px;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.HeddaBox {
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ width: 200px;
+ left: 50px;
+
+}
+p {
+    position:absolute;
+    left:40px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p2 {
+    position:absolute;
+    left:46px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p3 {
+    position:absolute;
+    left:21.5px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.kok {
+position:absolute;
+    width: 50%;
+    height: 460px;
+    left: 25%;
+    bottom:6%;
+
+}
+.kokTXT {
+    position: absolute; 
+    left: 1%;
+    color: gray;
+
+}
+.kokBoks {
+    height:4%;
+    left:40%;
+    bottom:0%;
+    background-color:var(--powder-blue);
+    position: absolute; 
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    width: 20%;
+
+}
+#titleHedda{
+ 
+    position: relative;
+    padding: 0;
+    width: 40%;
+    max-width: 40%;
+    left: 3%;
+    margin-top: 0px;
+    border-bottom: 4px solid darkgray;
+    border-radius: 10px;
+    background-color: var(--Sky-blue-crayola-mørk);
+    margin-bottom: 0px;
+}
+#titleHedda div{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+
+#titleHedda div h1{
+    color: gray;
+    font-size: 4em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.media1{
+    width:50px;
+    height:50px;
+    top:1%;
+    right:5%;
+    position:absolute;
+}
+.media2{
+    width:50px;
+    height:50px;
+    top:1%;
+    right:0.5%;
+    position:absolute;
+}
