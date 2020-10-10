@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Elbåt ladestasjon</title>
+        <meta content="text/html; charset=utf-8">
+    <style>
+        h2 {
+  color: black;
+  font-size: 120px;
+  text-decoration: underline;
+  text-decoration: blink;
+  font-style:normal;
+  font-family: impact, sans-serif;
+  text-shadow: 0 0 7px white, 0 0 12px white;
+  }
+  h3 {
+  color: black;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration: blink;
+  font-style: italic;
+  font-family: impact, sans-serif;
+  text-shadow: 0 0 3px white, 0 0 5px white;
+}
+        div {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+        .fix {
+            position: fixed;
+            left:0px;
+            right:0px;
+            top: 0px;
+            pointer-events: none;
+        }
+        .fix * {
+            pointer-events: all;
+        }
+
+        .mix {
+            position: fixed;
+            top: 20px;
+        }
+
+        .abs1 {
+            position: absolute;
+            top: 65%;
+            background-color: white;
+            width: 34%;
+            height: 55%;
+            z-index:1;
+        }
+
+        .abs1txt {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            height: 100%;
+            width: 100%;
+            top: 50%;
+        }
+
+        .abs2 {
+            position: absolute;
+            top: 65%;
+            background-color: red;
+            left: 33%;
+            width: 34%;
+            height: 55%;
+            z-index:1;
+        }
+        .abs3 {
+            position: absolute;
+            top: 65%;
+            background-color: black;
+            left: 66%;
+            width: 34%;
+            height: 55%;
+            z-index:1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fix" onclick="console.log('hei')">
+        
+        <img src="https://dusj4r71pmvop.cloudfront.net/8915/2087/7701/Sub-app_Electric_Boat_2080x700.jpg"
+            width="100%" height="65%" alt>
+
+        <div class="abs1">
+            <div class="abs1txt">
+                <a href="./html/navigasjon.html">Kart over alle ladestasjoner</a>
+            </div>
+            <a href="./html/navigasjon.html"><img src="https://media.snl.no/media/135814/article_topimage_kart.jpg" width="100%"
+                height="100%"  title="til kart" alt="Chabo"></a>
+
+        </div>
+
+        <div class="abs2">
+            <div class="abs1txt">
+                <a href="./html/Projekt HTML Håvard - Test.html"> Ladestasjon eksempel</a>
+            </div>
+                <a href="./html/Projekt HTML Håvard - Test.html"><img src="stasjon.jpg" width="100%" height="100%" title="Se ladestasjonene" alt="Chabo"> </a>
+        </div>
+        <div class="abs3">
+            <div class="abs1txt">
+                
+                    <a href="https://vg.no"> Mer om chabo</a>
+                </div>
+                    <a href="https://vg.no"><img src="https://i.ytimg.com/vi/swq8dAnsfsY/maxresdefault.jpg" width="100%" height="100%" title="Mer om chabo" alt="Chabo"></a>     
+        </div>
+        <div class="mix">
+            <h2><strong>ChaBo </strong>  </h2>
+            <h3> Norges største oversikt over elbåtladestasjoner </h3>
+        </div>
+    </div>
+</body>
+</html>

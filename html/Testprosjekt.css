@@ -1,0 +1,191 @@
+body {
+    background-image: url("https://images.theconversation.com/files/295442/original/file-20191003-52796-1763ajl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
+     background-size:1000%;
+    }
+        
+     
+    .overskrift {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #A9A9A9;
+    font-size: 25px;
+    font-family: calibri;
+    color: #ff37f4;
+    text-shadow: 2px -2px black;
+    
+   }
+   
+    img {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   left:0px;  
+   float: left;
+  
+   
+   }
+   
+   table{
+   position: relative;
+   top: 30px;
+   
+   
+   }
+   
+   
+   
+   td {
+   font-size: 30px;
+   }
+   
+   .tabell_2{
+    
+   border: 3px solid black;
+   tab-size: 16; 
+   }
+ 
+   
+   .tabell_3{
+   border: 3px solid black;
+   }
+ 
+   .tabell_4 {
+   border: 3px solid black;
+   } 
+   
+   
+   .bildet {
+   width: 20%;
+   height: 40%;
+   position: relative;
+   left:0px;  
+   float: left;
+   padding: 0px;
+   border: 3px solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   
+   }
+   
+   .bildet_2 {
+   width: 20%;
+   height: 40%;
+   position: relative;
+   right: 0px;
+   top:20px;
+   float: left;
+   padding: 0px;
+   border: 3px  solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   
+   }
+   
+   .gogle {
+   width: 20%;
+   height: 40%;
+   position: relative;
+   right: 100px;
+   top:-400px;
+   float: right;
+   padding: 0px;
+   border: 3px  solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   
+   }
+   
+   
+    .tekstus {
+   
+   position: relative;
+   right: 0px;
+   left: 30px;
+   top: -10px;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: Calibri,;
+   text-align: left;
+   font-size: 30px;
+   
+   }
+   
+   .tekstus_den_andre{
+   
+   position: relative;
+   left: 375px;
+   top: -140px;
+   padding: 5px;
+   border: 0px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 50px;
+   
+   }
+   
+   
+    .tekstus_den_tredje {
+   
+   position: relative;
+   right: 0px;
+   left: 30px;
+   top: 30px;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 30px;
+   
+   }
+   
+   .tekstus_den_fjerde {
+   
+   position: relative;
+   right: 0px;
+   left: 30px;
+   top: -20px;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 30px;
+   
+   }
+   
+   .tekstus_den_femte {
+   
+   position: relative;
+   right: 0px;
+   left: 30px;
+   top: 10px;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 30px;
+   
+   }
+   
+ 
+   .tekstus_den_sjette {
+   
+   position: relative;
+   right: 115px;
+   top: -375px;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: right;
+   font-size: 15px;
+   text-decoration: underline solid black;
+   
+   }
