@@ -4,7 +4,7 @@
     --Sky-blue-crayola-lys: #90E0EF;
     --Sky-blue-crayola-mørk: #48CAE4;
 }
-
+/* global spesifikasjon: fargen og font*/
 html body {
     margin: 0;
     background-color: var(--Sky-blue-crayola-mørk);
