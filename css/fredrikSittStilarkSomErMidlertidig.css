@@ -357,9 +357,9 @@ position:absolute;
    .gogle {
    width: 20%;
    height: 40%;
-   position: relative;
+   position: absolute;
    right: 5%;
-   top: 65%;
+   top: 80%;
    float: right;
    padding: 0px;
    border: 3px  solid #66ccff;
