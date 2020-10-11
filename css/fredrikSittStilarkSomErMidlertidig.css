@@ -561,3 +561,19 @@ position:absolute;
    text-decoration: underline solid black;
    
    }
+
+
+
+   #tablebottom{
+    position:fixed;
+    bottom:0;
+    left:30%;
+    width: 60%;
+    text-align:center;
+}
+#tableleft{
+    position:fixed;
+    left:90%;
+    text-align:center;
+    border: 3px solid black;
+}
