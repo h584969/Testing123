@@ -289,7 +289,7 @@ position:absolute;
     
    }
    
-    img {
+    .ladestasjon_bilde {
    width: 100%;
    height: 100%;
    position: relative;
@@ -299,7 +299,7 @@ position:absolute;
    
    }
    
-   table{
+   .tabell_1{
    position: relative;
    top: 30px;
    
