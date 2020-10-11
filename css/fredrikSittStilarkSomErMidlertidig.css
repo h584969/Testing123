@@ -205,7 +205,7 @@ position:absolute;
 
 }
 .kokTXT {
-    text-align: center;
+  text-align:center;
     color: gray;
 
 }
@@ -223,7 +223,6 @@ position:absolute;
 
 }
 #titleHedda{
- 
     position: relative;
     padding: 0;
     width: 40%;
