@@ -61,7 +61,7 @@ html body {
 #navigasjon {
     background-color: var(--powder-blue);
     height: 100%;
-    margin-top: 0px;
+    margin-top: 5%;
     min-width: 20%;
     max-width: 30%;
     border-top: 3px solid lightgray;
