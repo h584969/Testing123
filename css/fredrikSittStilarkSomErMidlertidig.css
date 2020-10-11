@@ -100,11 +100,11 @@ ul label:hover {
     border-bottom-color: blue;
 }
 
-ul label img {
+ul label .menypil {
     display: none;
 }
 
-ul label:hover img {
+ul label:hover .menypil {
     display: inline;
 }
 
