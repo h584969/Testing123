@@ -371,22 +371,88 @@ position:absolute;
    position: absolute;
    right: 0%;
    left: 18%;
-   top: 22%;
+   top: 25%;
    padding: 5px;
    border: 5px;
    margin: 25px;
-   font-family: calibri,;
+   font-family: calibri;
    text-align: left;
    font-size: 20px;
    
    }
+
+   .tekstus_tromso {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 28%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+
+    .tekstus_bjorvika {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 28%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+        
+        }
+
+
+
+    .tekstus_pipervika {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 28%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+
+
+
+    .tekstus_stavanger {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 28%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+        
+        }    
+
+
 
    .fasiliteter {
    
     position: absolute;
     right: 0%;
     left: 18%;
-    top: 30%;
+    top: 32%;
     padding: 5px;
     border: 5px;
     margin: 25px;
@@ -395,13 +461,74 @@ position:absolute;
     font-size: 20px;
     
     }
+    .fasiliteter_tromso {
    
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 37%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri,;
+        text-align: left;
+        font-size: 20px;
+        
+        }
+   
+        .fasiliteter_bjorvika {
+   
+            position: absolute;
+            right: 0%;
+            left: 18%;
+            top: 37%;
+            padding: 5px;
+            border: 5px;
+            margin: 25px;
+            font-family: calibri,;
+            text-align: left;
+            font-size: 20px;
+            
+            }
+
+            .fasiliteter_pipervika {
+   
+                position: absolute;
+                right: 0%;
+                left: 18%;
+                top: 37%;
+                padding: 5px;
+                border: 5px;
+                margin: 25px;
+                font-family: calibri,;
+                text-align: left;
+                font-size: 20px;
+                
+                }
+
+
+                .fasiliteter_stavanger {
+   
+                    position: absolute;
+                    right: 0%;
+                    left: 18%;
+                    top: 37%;
+                    padding: 5px;
+                    border: 5px;
+                    margin: 25px;
+                    font-family: calibri,;
+                    text-align: left;
+                    font-size: 20px;
+                    
+                    }
+
+
    .tekstus_den_andre{
    
    position: absolute;
    right:0%;
    left: 42%;
-   top: 20%;
+   top: 23%;
    padding: 5px;
    border: 0px;
    margin: 25px;
@@ -410,7 +537,70 @@ position:absolute;
    font-size: 10px;
    
    }
+   .tekstus_den_andre_tromso{
    
+    position: absolute;
+    right:0%;
+    left: 42%;
+    top: 28%;
+    padding: 5px;
+    border: 0px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 10px;
+    
+    }
+   
+    .tekstus_den_andre_bjorvika{
+   
+        position: absolute;
+        right:0%;
+        left: 42%;
+        top: 28%;
+        padding: 5px;
+        border: 0px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 10px;
+        
+        }
+
+
+    .tekstus_den_andre_pipervika{
+   
+        position: absolute;
+        right:0%;
+        left: 42%;
+        top: 28%;
+        padding: 5px;
+        border: 0px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 10px;
+            
+            }
+
+
+            .tekstus_den_andre_stavanger{
+   
+                position: absolute;
+                right:0%;
+                left: 42%;
+                top: 28%;
+                padding: 5px;
+                border: 0px;
+                margin: 25px;
+                font-family: calibri;
+                text-align: left;
+                font-size: 10px;
+                
+                }
+
+
+
    .tilbud {
    
     position: absolute;
@@ -576,4 +766,22 @@ position:absolute;
     left:90%;
     text-align:center;
     border: 3px solid black;
+}
+
+
+
+#grafbeholder{
+    position: absolute;
+}
+
+#grafbeholder img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+}
+
+#grafplasserer{
+    position: absolute;
+    left: 40%;
+    top: 150%
 }
