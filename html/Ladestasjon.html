@@ -6,7 +6,7 @@
     <title> ladestasjon </title>
     <link rel="stylesheet" href="../css/fredrikSittStilarkSomErMidlertidig.css">
 
-
+    <script src="../js/bildeViser.js"></script>
   </head>
 
 
@@ -21,7 +21,7 @@
 
     <div class="bildet">
       <img class="ladestasjon_bilde"
-        src="https://scontent.fsvg1-1.fna.fbcdn.net/v/t1.15752-0/p280x280/119138596_2785968075060059_1932828333514237489_n.jpg?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=P52xTVd9BJAAX-T5K3A&_nc_oc=AQlmNZexR8qpszI4AUZ1Gc_YXnv3UC58qqPAdH0tGrkhTgdtCLq-EaIkSH4H23-HhQc&_nc_ht=scontent.fsvg1-1.fna&tp=6&oh=dc950d080b51131f72e679b59b4f800f&oe=5F84B595" alt="ladestasjon1">
+        src="../bilder/stasjon.jpg" alt="ladestasjon1">
 
     </div>
 
@@ -228,16 +228,23 @@
       <a href="https://goo.gl/maps/GEaCMKqN8GA3LHzZA">
         <img class="ladestasjon_bilde" src="https://i.gyazo.com/c07e27a7993853bdce8ac7729867203c.png" alt="googlekart"/>
       </a>
+    
+    </div>
+    
+    
+    <div id="grafplasserer">
+      <button onclick="BildeViser.påklikk(0);">  50kW </button>
+      <button onclick="BildeViser.påklikk(1);"> 150kW </button>
+      <button onclick="BildeViser.påklikk(2);"> 250kW </button>  
+      <div id="grafbeholder">
+        <img src="../bilder/50kw.png" alt="50kw" id="bilde50">
+        <img src="../bilder/150kw.png" alt="150kw" id="bilde150">
+        <img src="../bilder/250kw.png" alt="250kw" id="bilde250">
+      </div>
+  
+    </div>
 
-    </div>
-    <div>
-      <img src="../bilder/50kw.png" alt="50kw">
-      <img src="../bilder/150kw.png" alt="150kw">
-      <img src="../bilder/250kw.png" alt="250kw">
-    </div>
-    <button>  50kW </button>
-    <button> 150kW </button>
-    <button> 250kW </button>  
+
 
 
   </body>
