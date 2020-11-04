@@ -782,6 +782,10 @@ position:absolute;
 
 #grafplasserer{
     position: absolute;
+<<<<<<< HEAD
     left: 40%;
     top: 150%
+=======
+    top: 135%
+>>>>>>> 182556f340e286c5f7855177ba2026332a272f59
 }
