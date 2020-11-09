@@ -1,0 +1,813 @@
+:root{
+    --powder-blue: #CAF0F8;
+    --blizzard-blue: #ADE8F4;
+    --Sky-blue-crayola-lys: #90E0EF;
+    --Sky-blue-crayola-mørk: #48CAE4;
+}
+/* global spesifikasjon: fargen og font*/
+html body {
+    margin: 0;
+    background-color: var(--Sky-blue-crayola-mørk);
+    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/*================== øverste del av nettsiden ==================*/
+#header{
+    background-color: var(--Sky-blue-crayola-mørk);
+    position: relative;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#header tbody tr{
+    height: inherit;
+}
+
+#logo{
+    
+    width: 10%;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    position: relative;
+    padding: 0;
+    width: 40%;
+    max-width: 40%;
+    margin-top: 0px;
+    border-bottom: 4px solid darkgray;
+    border-radius: 10px;
+    background-color: var(--Sky-blue-crayola-mørk);
+    margin-bottom: 0px;
+}
+
+#title div{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+
+#title div h1{
+    color: gray;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+}
+/*===========================================================================*/
+
+#navigasjon {
+    background-color: var(--powder-blue);
+    height: 100%;
+    margin-top: 5%;
+    min-width: 20%;
+    max-width: 30%;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-bottom-right-radius: 10px;
+}
+
+#navigasjon ul, #navigasjon li {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+#kart {
+    
+    z-index: -1;
+    position: fixed;
+    left: 40%;
+    top: 0;
+    width: 60%;
+    padding: 0;
+}
+
+#navigasjon ul label {
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 1px solid var(--powder-blue);
+}
+
+#navigasjon ul label:hover {
+    color: blue;
+    border-bottom-color: blue;
+}
+
+#navigasjon ul label .menypil {
+    display: none;
+}
+
+#navigasjon ul label:hover .menypil {
+    display: inline;
+}
+
+.underGruppe {
+    display: none;
+}
+
+.vis {
+    display: block;
+}
+
+
+.HeddaVenstre {
+    position: absolute;
+    bottom: 10%;
+    left: 13%;
+  background-color: black;
+    width: 300px;
+    height: 300px;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    z-index:1;
+}
+.HeddaHøyre {
+    position: absolute;
+    bottom: 10%;
+    right: 13%;
+  background-color: black;
+    width: 300px;
+    height: 300px;
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    z-index:1;
+}
+.HeddaHøyreTXT {
+    position: absolute;
+    background-color:var(--powder-blue);
+    bottom: 6%;
+    right: 13%;
+    color: rgb(0, 0, 0);
+    height: 4%;
+    width: 300px;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.HeddaVenstreTXT {
+    position: absolute;
+    background-color:var(--powder-blue);
+    bottom: 6%;
+    left:13%;
+    color: rgb(0, 0, 0);
+    height: 4%;
+    width: 300px;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.HeddaBox {
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ width: 200px;
+ left: 50px;
+
+}
+.p1 {
+    position:absolute;
+    left:40px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p2 {
+    position:absolute;
+    left:46px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p3 {
+    position:absolute;
+    left:21.5px;
+    bottom:-15.5px;
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.kok {
+position:absolute;
+    width: 50%;
+    height: 460px;
+    left: 25%;
+    bottom:6%;
+
+}
+.kokTXT {
+  text-align:center;
+    color: gray;
+
+}
+.kokBoks {
+    height:4%;
+    left:40%;
+    bottom:0%;
+    background-color:var(--powder-blue);
+    position: absolute; 
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    width: 20%;
+
+}
+#titleHedda{
+    position: relative;
+    padding: 0;
+    width: 40%;
+    max-width: 40%;
+    left: 3%;
+    margin-top: 0px;
+    border-bottom: 4px solid darkgray;
+    border-radius: 10px;
+    background-color: var(--Sky-blue-crayola-mørk);
+    margin-bottom: 0px;
+}
+#titleHedda div{
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+}
+
+#titleHedda div h1{
+    color: gray;
+    font-size: 4em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.media1{
+    width:50px;
+    height:50px;
+    top:1%;
+    right:5%;
+    position:absolute;
+}
+.media2{
+    width:50px;
+    height:50px;
+    top:1%;
+    right:0.5%;
+    position:absolute;
+}
+
+
+
+
+#ladestasjonLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ladestasjonLogo a img{
+    border: 0;
+
+    width: 90%;
+    height: auto;
+    z-index: 4;
+}
+
+.ladebody {
+    background-image: url("https://images.theconversation.com/files/295442/original/file-20191003-52796-1763ajl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
+     background-size:1000%;
+    }
+        
+     
+    .overskrift {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    font-size: 25px;
+    font-family: calibri;
+    color:#cecaca;
+    text-shadow: 2px -2px black;
+    
+   }
+   
+    .ladestasjon_bilde {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   left:0px;  
+   float: left;
+  
+   
+   }
+   
+   .tabell_1{
+   position: relative;
+   top: 30px;
+   }
+   
+   
+   
+   td {
+   font-size: 17px;
+   }
+   
+   .tabell_2{
+    
+   border: 3px solid black;
+   tab-size: 16; 
+   }
+ 
+   
+   .tabell_3{
+   border: 3px solid black;
+   }
+ 
+   .tabell_4 {
+   border: 3px solid black;
+   } 
+   
+   
+   .bildet {
+   width: 20%;
+   height: 40%;
+   position: absolute;
+   left:0%;  
+   top: 15%;
+   float: left;
+   padding: 0px;
+   border: 3px solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   
+   }
+   
+   .bildet_2 {
+   width: 20%;
+   height: 40%;
+   position: absolute;
+   left: 0%;
+   top: 60%;
+   float: left;
+   padding: 0px;
+   border: 3px  solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   
+   }
+   
+   .gogle {
+   width: 20%;
+   height: 40%;
+   position: absolute;
+   right: 5%;
+   top: 80%;
+   float: right;
+   padding: 0px;
+   border: 3px  solid #66ccff;
+   border-width: 3px;
+   margin: 0px;
+   }
+   
+   
+    .tekstus {
+   
+   position: absolute;
+   right: 0%;
+   left: 18%;
+   top: 28%;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 20px;
+   
+   }
+
+   .tekstus_tromso {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 28%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+
+    .tekstus_bjorvika {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 28%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+        
+        }
+
+
+
+    .tekstus_pipervika {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 28%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+
+
+
+    .tekstus_stavanger {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 28%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+        
+        }    
+
+
+
+   .fasiliteter {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 34%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri,;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+    .fasiliteter_tromso {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 37%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri,;
+        text-align: left;
+        font-size: 20px;
+        
+        }
+   
+        .fasiliteter_bjorvika {
+   
+            position: absolute;
+            right: 0%;
+            left: 18%;
+            top: 37%;
+            padding: 5px;
+            border: 5px;
+            margin: 25px;
+            font-family: calibri,;
+            text-align: left;
+            font-size: 20px;
+            
+            }
+
+            .fasiliteter_pipervika {
+   
+                position: absolute;
+                right: 0%;
+                left: 18%;
+                top: 37%;
+                padding: 5px;
+                border: 5px;
+                margin: 25px;
+                font-family: calibri,;
+                text-align: left;
+                font-size: 20px;
+                
+                }
+
+
+                .fasiliteter_stavanger {
+   
+                    position: absolute;
+                    right: 0%;
+                    left: 18%;
+                    top: 37%;
+                    padding: 5px;
+                    border: 5px;
+                    margin: 25px;
+                    font-family: calibri,;
+                    text-align: left;
+                    font-size: 20px;
+                    
+                    }
+
+
+   .tekstus_den_andre{
+   
+   position: absolute;
+   right:0%;
+   left: 42%;
+   top: 25%;
+   padding: 5px;
+   border: 0px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 10px;
+   
+   }
+   .tekstus_den_andre_tromso{
+   
+    position: absolute;
+    right:0%;
+    left: 42%;
+    top: 28%;
+    padding: 5px;
+    border: 0px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 10px;
+    
+    }
+   
+    .tekstus_den_andre_bjorvika{
+   
+        position: absolute;
+        right:0%;
+        left: 42%;
+        top: 28%;
+        padding: 5px;
+        border: 0px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 10px;
+        
+        }
+
+
+    .tekstus_den_andre_pipervika{
+   
+        position: absolute;
+        right:0%;
+        left: 42%;
+        top: 28%;
+        padding: 5px;
+        border: 0px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 10px;
+            
+            }
+
+
+            .tekstus_den_andre_stavanger{
+   
+                position: absolute;
+                right:0%;
+                left: 42%;
+                top: 28%;
+                padding: 5px;
+                border: 0px;
+                margin: 25px;
+                font-family: calibri;
+                text-align: left;
+                font-size: 10px;
+                
+                }
+
+
+
+   .tilbud {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 55%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    }
+   
+    .tekstus_den_tredje {
+   
+   position: absolute;
+   right: 0%;
+   left: 18%;
+   top: 62%;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 20px;
+   
+   }
+   
+   .tekstus_den_fjerde {
+   
+   position: absolute;
+   right: 0%;
+   left: 18%;
+   top: 67%;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 20px;
+   
+   }
+
+   .ladekontakter {
+   
+    position: absolute;
+    right: 0%;
+    left: 18%;
+    top: 72%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 20px;
+    
+    }
+
+
+    .betaling {
+   
+        position: absolute;
+        right: 0%;
+        left: 18%;
+        top: 90%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+        
+        }
+
+    .oversikt {
+   
+        position: absolute;
+        right: 0%;
+        left: 28%;
+        top: 120%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 20px;
+    }
+
+
+   .tab_2 {
+   
+   position: absolute;
+   
+   left: 0%;
+   top: 120%;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: left;
+   font-size: 30px;
+   
+   }
+
+   .tab_3 {
+   
+    position: absolute;
+    right:0%;
+    left: 32%;
+    top: 120%;
+    padding: 5px;
+    border: 5px;
+    margin: 25px;
+    font-family: calibri;
+    text-align: left;
+    font-size: 30px;
+    
+    }
+
+
+    .tab_4 {
+   
+        position: absolute;
+        left:64%;
+        top: 120%;
+        padding: 5px;
+        border: 5px;
+        margin: 25px;
+        font-family: calibri;
+        text-align: left;
+        font-size: 30px;
+        
+        }
+   
+ 
+   .tekstus_den_sjette {
+   
+   position: absolute;
+   right: 6%;
+   top: 65%;
+   padding: 5px;
+   border: 5px;
+   margin: 25px;
+   font-family: calibri;
+   text-align: right;
+   font-size: 15px;
+   text-decoration: underline solid black;
+   
+   }
+
+
+   #bottomcontainer{
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+   }
+
+   #tablebottom{
+    width: 60%;
+    margin: auto;
+    text-align:center;
+}
+#tableleft{
+    float: right;
+    text-align:center;
+    border: 3px solid black;
+}
+
+
+
+#grafbeholder{
+    position: absolute;
+}
+
+#grafbeholder img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+}
+
+#grafplasserer{
+    position: absolute;
+    left: 40%;
+    top: 150%
+}
+
+#lenkefly{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.flybilder{
+    width: 49%;
+    height: auto;
+}
