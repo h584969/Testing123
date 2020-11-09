@@ -266,6 +266,19 @@ position:absolute;
 
 
 
+#ladestasjonLogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ladestasjonLogo a img{
+    border: 0;
+
+    width: 90%;
+    height: auto;
+    z-index: 4;
+}
 
 .ladebody {
     background-image: url("https://images.theconversation.com/files/295442/original/file-20191003-52796-1763ajl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
